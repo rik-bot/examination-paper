@@ -1,0 +1,127 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background: linear-gradient(
+    219.43deg,
+    #040114 24.07%,
+    #080435 39.3%,
+    #130f3d 79.8%,
+    #000000 146.93%
+  );
+  padding-top: 50px;
+  //   min-height: 400px;
+}
+.block-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.footer-block__subtitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-block__title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+.footer-btn {
+  border: 2px solid #456ae7;
+  filter: drop-shadow(0px 9px 19px rgba(0, 0, 0, 0.15));
+  border-radius: 60px;
+  padding: 13px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.footer-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.follow {
+  display: flex;
+  align-items: flex-start;
+}
+.connection {
+  display: flex;
+  flex-direction: column;
+}
+.connection__title {
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.connection-telegram {
+  display: flex;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.connection-email {
+  display: flex;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.our-partners__title {
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.Our-partners {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #06001d;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 42px;
+  color: #ffffff;
+}
+@media screen and (max-width: 920px) {
+  .footer {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .footer-block {
+    max-width: 100%;
+  }
+  .block-body {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .footer-section {
+    max-width: 100%;
+  }
+  .connection {
+    max-width: 100%;
+  }
+  .Our-partners {
+    max-width: 100%;
+  }
+}

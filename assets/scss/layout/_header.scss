@@ -1,0 +1,138 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000;
+  // position: sticky;
+  top: 0;
+  // z-index: 9999;
+  padding: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+.elipse {
+  position: absolute;
+  left: -185px;
+  right: 0;
+  top: -15px;
+  bottom: 0;
+  z-index: 9999;
+}
+.elipse2 {
+  position: absolute;
+  left: -90px;
+  top: 50px;
+}
+.logo-title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+.nav__link {
+  color: rgba(255, 255, 255, 0.81);
+  transition: 0.6s all;
+}
+.nav__link:hover {
+  transform: translateY(-4px);
+}
+.header_nav__collapse {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  border: 2px solid #456ae7;
+  background: #000;
+  border-radius: 60px;
+  padding: 10px 15px;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  z-index: 9999999;
+}
+
+.language-list {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  color: #000;
+  border-radius: 5px;
+  padding: 0 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s all;
+}
+
+.language-list.active {
+  max-height: 600px;
+  padding: 20px 0;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 920px) {
+  .hamburger {
+    display: inline-block;
+    margin-left: auto;
+  }
+  .header {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 9999;
+  }
+  .header_nav__collapse {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header_nav__collapse {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 78px;
+    background: #000;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    padding: 0 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s all;
+    z-index: 999;
+  }
+  .header_nav__collapse.is-active {
+    flex-direction: column;
+    padding: 3.125rem 0;
+    max-height: 400px;
+  }
+  .header-nav {
+    flex-direction: column;
+  }
+}

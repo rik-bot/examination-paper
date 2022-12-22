@@ -1,0 +1,110 @@
+.card-body {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  max-width: 435px;
+  box-sizing: border-box;
+  padding: 25px;
+  transform: translateY(-500px) translateX(-200px);
+}
+.card-body-two {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  max-width: 435px;
+  box-sizing: border-box;
+  padding: 25px;
+  transform: translateY(-600px) translateX(50px);
+}
+.bonus-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.card__title {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #0d2a6b;
+}
+.card__subtitle {
+  font-family: "Mazzard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #0d2a6b;
+}
+.card__subtitle span {
+  color: #864dff;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.education p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  color: #0d2a6b;
+}
+.education span {
+  font-weight: 600;
+  font-size: 40px;
+  color: #864dff;
+  text-transform: uppercase;
+}
+.education-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-button a {
+  background: linear-gradient(
+    122.93deg,
+    #7345d3 -137.34%,
+    #5470f0 38.32%,
+    #1858cd 129.02%
+  );
+  box-shadow: 0px 9px 19px rgba(0, 0, 0, 0.15);
+  border-radius: 60px;
+  padding: 10px 60px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 920px) {
+  .mac img {
+    display: none;
+  }
+  .bonus-card {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .card-body {
+    transform: inherit;
+  }
+  .card-body-two {
+    transform: inherit;
+  }
+  .education {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .education p {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .education-button img {
+    display: none;
+  }
+}
