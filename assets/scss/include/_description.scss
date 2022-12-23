@@ -112,7 +112,8 @@
     margin-top: 100px;
   }
   .services-block {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
     max-width: 100%;
   }
 }

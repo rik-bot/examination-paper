@@ -43,6 +43,7 @@
 .wrapper {
   font-family: "MazzardM", sans-serif;
   max-width: 1920px;
+  max-width: 100%;
 }
 
 .container {
@@ -142,7 +143,6 @@
   border-radius: 5px;
   padding: 0 0;
   max-height: 0;
-  overflow: hidden;
   transition: 0.6s all;
 }
 
@@ -483,7 +483,8 @@
     margin-top: 100px;
   }
   .services-block {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
     max-width: 100%;
   }
 }
@@ -608,7 +609,7 @@
     margin-left: 30px;
   }
   .info-content h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 .levels {
@@ -758,10 +759,10 @@
 @media screen and (max-width: 620px) {
   .levels__description {
     position: inherit;
-    font-size: 40px;
+    font-size: 30px;
   }
   .levels__description span {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 .card-body {
@@ -868,6 +869,7 @@
   .education {
     flex-direction: column;
     max-width: 100%;
+    margin-top: 50px;
   }
   .education p {
     max-width: 100%;
@@ -1207,6 +1209,14 @@
     max-width: 100%;
     flex-direction: column;
   }
+  .statistics__title {
+    font-size: 30px;
+    max-width: 100%;
+  }
+  .statistics__title span {
+    max-width: 100%;
+    font-size: 30px;
+  }
   .statistics-text {
     flex-direction: column;
     align-items: flex-start;
@@ -1229,6 +1239,14 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.reviews__title span {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #616ad9;
+}
+
 .reviews__title {
   display: flex;
   align-items: center;
@@ -1239,13 +1257,6 @@
   text-transform: uppercase;
   color: #0d2a6b;
 }
-.reviews__title span {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: #616ad9;
-}
 
 .reviews-card {
   background: linear-gradient(12.81deg, #4e9cdb 8.9%, #5761d7 88.4%, #7628da 108.06%);
@@ -1253,14 +1264,6 @@
   border-radius: 30px;
   max-width: 560px;
   min-height: 425px;
-}
-
-.reviews__title {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 29px;
-  text-align: center;
-  color: #ffffff;
 }
 
 .reviews-rocket {
@@ -1308,6 +1311,22 @@
   color: #0d2a6b;
 }
 
+@media screen and (max-width: 920px) {
+  .reviews {
+    max-width: 100%;
+  }
+  .reviews__title {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 35px;
+    max-width: 100%;
+  }
+  .reviews__title span {
+    flex-direction: column;
+    width: 100%;
+    font-size: 35px;
+  }
+}
 .footer {
   display: flex;
   align-items: center;
